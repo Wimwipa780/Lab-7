@@ -2,11 +2,24 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	char N = x-1;
+	
+    
+	if (65<=int (N)&&int (N)<=90){
+		return (N) ;
+	}
+	if (x-1=='@'){
+		return 'Z';
+	}
+	else{
+		return '0' ;
+	}
+	
+	
 }
 
 int main(){
-	//Test Case
+	
 	cout << before('A') << "\n";
 	cout << before('B') << "\n";
 	cout << before('P') << "\n";
